@@ -43,3 +43,25 @@ function fnIdiomaIngles(){
     document.getElementById("rodape1").innerText = "© 2025 Guto Xavier. All rights reserved."
 }
 
+function fnBanner1(){
+    document.getElementById("banner").src="images/banner01.jpg"
+}
+function fnBanner2(){
+    document.getElementById("banner").src="images/banner02.jpg"
+}
+function fnBanner3(){
+    document.getElementById("banner").src="images/banner03.jpg"
+}
+function fnBanner4(){
+    document.getElementById("banner").src="images/banner04.jpg"
+}
+
+function fnRegistrarContato(){
+    let email = document.getElementById("email1").innerText
+
+    //limpar os campos
+
+    document.getElementById("email1").innerText = ""
+
+    alert("seu email " + email + "foi cadastrado com sucesso.")
+}
