@@ -57,11 +57,20 @@ function fnBanner4(){
 }
 
 function fnRegistrarContato(){
-    let email = document.getElementById("email1").innerText
+    let email = document.getElementById("email1").value
 
     //limpar os campos
 
-    document.getElementById("email1").innerText = ""
+    document.getElementById("email1").value = ""
 
-    alert("seu email " + email + "foi cadastrado com sucesso.")
+    alert("seu email " + email + " foi cadastrado com sucesso.")
 }
+
+function fnHoraAtual(){
+    const now = new Date();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    const seconds = now.getSeconds();
+    document.getElementById("hora").innerText = (hours) +":"+  (minutes) +":"+(seconds)
+}
+setInterval(fnHoraAtual, 1000);
